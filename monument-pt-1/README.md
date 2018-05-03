@@ -61,4 +61,4 @@ Be sure to pay attention to detail and consider the following:
 ##### Mockup with Bonus Tasks:
 ![](screenshots/blog_pt_1_challenge.png)
 
-## [Next! Part 2!](../monument-part-2/README.md)
+## [Next! Part 2!](../monument-pt-2/README.md)
