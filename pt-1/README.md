@@ -29,7 +29,6 @@ Your work must:
 
 - Google and implement a `background-image` for the header section. Look up properties such as `background-image`, `background-size`, and `background-position`.
 - Google and implement FontAwesome Icons for the footer links to Facebook, Twitter, and Instagram.
-- Look up Emmet shortcuts for how to quickly scale up your HTML.
 - Experiment with padding and margin to add space between elements on the page.
 
 #### Starter Code
