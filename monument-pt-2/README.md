@@ -37,4 +37,4 @@ You will continue working on the project you started last night.
 ##### Bonus Task — Hover Effect
 ![](screenshots/hover-effect.gif)
 
-### Next up: [Monument Part 3!](## [Next! Part 2!](../monument-pt-3/README.md)
+### Next up: [Monument Part 3!](../monument-pt-3/README.md)
