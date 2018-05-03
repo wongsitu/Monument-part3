@@ -34,7 +34,7 @@ Your work must:
 
 #### Starter Code
 
-Images that you'll need to recreate on the blog have been provided in the Starter Code folder. This folder contains images you'll use today, as well as images you'll use when you build the landing page.
+Images that you'll need to recreate on the blog have been provided in the Starter Code folder in the pt-1 folder. This folder contains images you'll use today, as well as images you'll use when you build the landing page.
 
 #### Suggested Ways to Get Started
 
@@ -61,4 +61,4 @@ Be sure to pay attention to detail and consider the following:
 ##### Mockup with Bonus Tasks:
 ![](screenshots/blog_pt_1_challenge.png)
 
-## [Next! Part 2!](../monument-pt-2/README.md)
+## [Next! Part 2!](./monument-pt-2/README.md)
