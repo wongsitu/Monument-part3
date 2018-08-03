@@ -1,0 +1,217 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    color: #44545E;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Lato', sans-serif;
+  }
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    z-index: 1;
+    margin: 0;
+    background-color: white;
+    width: 100%;
+    justify-content: space-around;
+    padding-left:0%;
+    padding-right:0%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #44545E;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.headerimg{
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div h5{
+    margin-left: 7%;
+    margin-bottom: 0%;
+
+}
+
+main{
+    margin: 5%;
+    margin-top: 0%;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    align-self: auto;
+    justify-content: space-between;
+}
+
+main p{
+    font-size: 80%;
+}
+
+main section{
+    width: 100%;
+    margin: 2%;
+}
+
+header,footer{
+    text-align: center;
+}
+
+header h1{
+    letter-spacing: 0.5em;
+}
+
+aside {
+    width: 50%;
+    margin: 2%;
+}
+
+aside ul{
+    align-content: left;
+}
+
+aside ul li{
+    padding: 2%;
+}
+
+.big{
+    width: 100%;
+    height: auto;
+}
+
+.comment-title{
+    text-align: center;
+}
+
+form{
+    align-content: center;
+    display: grid;
+    grid-template-rows:5% 100px 5%;
+    grid-template-columns: 7% 1fr 1fr 7%;
+}
+
+.name{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0;
+    margin-right: 0.5%;
+}
+
+.email{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0;
+    margin-left: 0.5%;
+}
+
+.message{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    resize: none;
+    border: 2px solid grey;
+}
+
+.submit{
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 2;
+    border: 2px solid grey;
+    margin: 1% 0;
+}
+
+footer{
+    width: 100%;
+    padding:5px;
+    background-color: paleturquoise;
+}
+
+footer nav ul{
+    justify-content: center;
+
+}
+
+
+.copyright{
+    border-top: 1px solid black;
+    padding-top: 2%;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid grey;
+}
+
+footer div input{
+    border: none;
+
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+ul a i{
+    padding: 10px;
+    font-size: 300%;
+}
+
+@media screen and (max-width: 775px) {
+
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .name{
+        margin:0;
+        margin-bottom: 1%;
+    }
+
+    .email{
+        margin:0;
+        margin-bottom: 1%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        margin: 2%;
+    }
+
+    textarea{
+        height: 100px;
+    }
+}
