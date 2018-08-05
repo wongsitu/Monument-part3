@@ -1,0 +1,248 @@
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.from-the-archieve{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0%;
+}
+
+.center{
+    text-align:center;
+    display: block;
+    margin: 3% auto;
+}
+
+.first-row, .second-row, .third-row{
+    margin: 0 5%;
+}
+
+.image-1{
+    width: 100%;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.image-2{
+    width: 100%;
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+.image-3{
+    width: 100%;
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+}
+
+.text-1{
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+    text-align:center;
+}
+
+.text-2{
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+    text-align:center;
+}
+
+.text-3{
+    grid-row: 1 / span 1;
+    grid-column: 6 / span 1;
+    text-align:center;
+}
+
+.about-the-magazine{
+    background-color: #CDF3F6;
+    padding: 10%;
+}
+
+.compress{
+    margin: auto auto;
+}
+
+.table-img{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main div img{
+    margin: 2%;
+}
+
+.column{
+    margin: 3%;
+}
+
+.column img {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.column img:hover{
+    opacity: 0.5;
+}
+
+.first-row-first-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.second-row-second-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.second-row-first-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.first-row-second-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.first-row-third-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.second-row-third-column{
+    width: 100%;
+    height: auto;
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+form{
+    align-content: center;
+    display: grid;
+    grid-template-rows:5% 100px 5%;
+    grid-template-columns: 7% 1fr 1fr 1fr 7%;
+}
+
+.name{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0.25%;
+}
+
+.email{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0.25%;
+}
+
+.subject{
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0.25%;
+}
+
+.message{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 3;
+    resize: none;
+    border: 2px solid grey;
+    margin: 0;
+}
+
+.submit{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 3;
+    border: 2px solid grey;
+    margin: 1% 0;
+}
+
+@media screen and (max-width: 775px) {
+
+    .from-the-archieve{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-1, .image-2, .image-3{
+        width: 60%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-img{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .first-row-first-column{
+        width: 100%;
+        height: auto;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .second-row-second-column{
+        width: 100%;
+        height: auto;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .second-row-first-column{
+        width: 100%;
+        height: auto;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .first-row-second-column{
+        width: 100%;
+        height: auto;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .first-row-third-column{
+        width: 100%;
+        height: auto;
+        grid-row: 1 / span 1;
+        grid-column:  2 / span 1;
+    }
+    
+    .second-row-third-column{
+        width: 100%;
+        height: auto;
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+}

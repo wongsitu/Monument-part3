@@ -6,7 +6,7 @@ body{
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-family: 'Lato', sans-serif;
-  }
+}
 
 p{
     font-family: 'Lato', sans-serif;
@@ -54,13 +54,11 @@ nav ul a{
     transform: translate(-50%, -50%);
 }
 
-div h5{
-    margin-left: 7%;
-    margin-bottom: 0%;
-
+.date{
+    margin: 0 7%;
 }
 
-main{
+.blog-body{
     margin: 5%;
     margin-top: 0%;
     font-weight: lighter;
@@ -149,7 +147,7 @@ form{
 footer{
     width: 100%;
     padding:5px;
-    background-color: paleturquoise;
+    background-color: #CDF3F6;
 }
 
 footer nav ul{
@@ -166,6 +164,7 @@ footer nav ul{
 button{
     background-color: transparent;
     border: 2px solid grey;
+    color: grey;
 }
 
 footer div input{
@@ -180,10 +179,14 @@ button:hover{
 
 ul a i{
     padding: 10px;
-    font-size: 300%;
+    font-size: 150%;
 }
 
 @media screen and (max-width: 775px) {
+    .blog-body{
+        display: flex;
+        flex-direction: column;
+    }
 
     form{
         display: flex;
@@ -201,11 +204,10 @@ ul a i{
         margin-bottom: 1%;
     }
 
-    main {
+    form {
         display: flex;
         flex-direction: column;
     }
-
     aside {
         width: 100%;
         margin: 2%;
