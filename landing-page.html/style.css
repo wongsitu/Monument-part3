@@ -66,12 +66,6 @@ main{
     margin: auto auto;
 }
 
-.table-img{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 main div img{
     margin: 2%;
 }
@@ -80,55 +74,23 @@ main div img{
     margin: 3%;
 }
 
-.column img {
+.table-img img {
+    width: 100%;
     opacity: 1;
     transition: 1s ease;
 }
 
-.column img:hover{
+.table-img img:hover{
     opacity: 0.5;
 }
 
-.first-row-first-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-}
-
-.second-row-second-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-}
-
-.second-row-first-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-}
-
-.first-row-second-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-}
-
-.first-row-third-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
-}
-
-.second-row-third-column{
-    width: 100%;
-    height: auto;
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
+.table-img{
+    column-count: 3;
+    /* After 3 hours trying to set a grid for the
+    'ISSUE TWENTY' part, I found out that flexbox and grid
+    are terrible when it comes to make this kind of set up for these images
+    column-count makes everything easier in just one line
+    and I do not have to worry about resizing imgs*/
 }
 
 form{
@@ -193,56 +155,7 @@ form{
 
 @media screen and (max-width: 475px) {
 
-    .column{
-        display: flex;
-        flex-direction: column;
-    }
-
     .table-img{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .first-row-first-column{
-        width: 100%;
-        height: auto;
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .second-row-second-column{
-        width: 100%;
-        height: auto;
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .second-row-first-column{
-        width: 100%;
-        height: auto;
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .first-row-second-column{
-        width: 100%;
-        height: auto;
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .first-row-third-column{
-        width: 100%;
-        height: auto;
-        grid-row: 1 / span 1;
-        grid-column:  2 / span 1;
-    }
-    
-    .second-row-third-column{
-        width: 100%;
-        height: auto;
-        grid-row: 2 / span 1;
-        grid-column: 2 / span 1;
+        column-count: 2;
     }
 }
