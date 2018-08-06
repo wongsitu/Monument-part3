@@ -25,6 +25,10 @@ header nav ul{
     padding-right:0%;
 }
 
+.hamburguer{
+    display: none;
+}
+
 .social-media {
     display: flex;
     flex-direction: row;
@@ -162,6 +166,7 @@ footer nav ul{
 }
 
 button{
+    padding: 0.5em 1em;
     background-color: transparent;
     border: 2px solid grey;
     color: grey;
@@ -180,6 +185,16 @@ button:hover{
 ul a i{
     padding: 10px;
     font-size: 150%;
+}
+
+.email-footer input{
+    padding: 0.5em 4em;
+    margin: 1em;
+}
+
+.email-footer button{
+    margin: 1em;
+    padding: 0.5em 3em;
 }
 
 @media screen and (max-width: 775px) {
@@ -216,4 +231,37 @@ ul a i{
     textarea{
         height: 100px;
     }
+}
+
+@media screen and (max-width: 475px) {
+
+    .navigation{
+        display: none;
+    }
+
+    .hamburguer{
+        display: flex;
+        position: fixed;
+        margin: 5%;
+        z-index: 1;
+        justify-content: flex-start;
+    }
+
+    .email-footer{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+
+    .email-footer input{
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    .email-footer button{
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
 }
